@@ -18,7 +18,7 @@ section>div{
   /* background-image: var(--gradientBackground); */
   animation: moveBackground 150s infinite alternate;
   background-size: 200%;
-  height: 400px;
+  height: 60vh;
 }
 
 @keyframes moveBackground{
@@ -36,6 +36,7 @@ section>div{
 .title{
   text-decoration: none;
   color: #DFF6FF;
+  font-size: 3.5rem;
 }
 
 .nav-text{
@@ -116,9 +117,35 @@ hr{
   border-radius: 50%;
 }
 
+@media (max-width:1534px){
+  .title{
+    font-size: 3rem;
+  }
+
+  .edu-place img{
+    width:150px;
+  }
+
+  .edu-place h5{
+    font-size: 1rem;
+  }
+
+  .edu-place p{
+    font-size: .8rem;
+  }
+
+  .work-place img{
+    width: 200px;
+  }
+
+  .work-place h5{
+    font-size: 1.1rem;
+  }
+}
+
 .skill{
   width: 50%;
-  padding-left: 140px;
+  padding-left: 120px;
 }
 
 .skill-name{
@@ -140,6 +167,37 @@ hr{
   display: inline-block;
   color: orange;
   margin-right: 20px;
+}
+
+@media (max-width:1434px){
+  .skill{
+    padding-left: 80px;
+  }
+  .skill-name{
+    font-size: 1.2rem;
+  }
+
+  .star{
+    font-size: 25px;
+  }
+}
+
+@media (max-width:996px){
+  .title{
+    font-size: 2.5rem;
+  }
+
+  .skill{
+    padding-left: 10px;
+  }
+  .skill-name{
+    font-size: 1rem;
+  }
+
+  .star{
+    font-size: 20px;
+    margin-right: 10px;
+  }
 }
 
 .project-row{
@@ -188,4 +246,36 @@ hr{
   color: white;
   text-decoration: none;
   padding: 0 5px;
+}
+
+.socmed-icon svg{
+  width: 25px;
+  height: 25px;
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:960px){
+  .copyright{
+    font-size: .8rem;
+  }
+
+  .socmed-icon svg{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width:832px){
+  .copyright{
+    font-size: .7rem;
+  }
+
+  .socmed-icon svg{
+    width: 15px;
+    height: 15px;
+  }
 }
